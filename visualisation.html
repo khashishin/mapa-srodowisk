@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="visualise.css" rel="stylesheet" />
+<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>                                                   
+</head>
+<body>
+<div id="map-container">
+      <div id="map"></div>
+      <div id='description'>Tutaj zmienia się opis</div>   
+<!-- Tutaj sa dodatkowe elementy ew. do dodania (opcje, disclaimery about itd.)										-->
+<!--  <div id='about'> 																								-->
+<!--    <a href='#' class="show">About</a>                                                                          -->
+<!--    <p class='content'>                                                                                         -->
+<!--      <a href='#' class="hide">Hide</a>                                                                         -->
+<!--	        Created by P.K                                                                                      -->
+<!--      <a href='https://www.mapbox.com/about/maps/' target='_blank'>Mapbox and OpenStreetMap</a>.                -->
+<!--   </div>                                                                                                       -->
+<!--                                                                                                                -->    
+<!--  <div id='selections' class="selections">                                                                       -->
+<!-- 	 <div id="container">                                                                                           -->
+<!-- 	 <nav id="menu"></nav>                                                                                          -->
+<!-- 		Testowy checkbox                                                                                            -->
+<!-- 		<input type="checkbox" id="selector" style="border:2px dotted #00f;display:block;background:#ff0000;" />    -->
+<!-- 	 </div>
+<!-- 			<div id='options'>                           															-->
+<!-- 		  <a href='#' class="show">Options</a>           															-->
+<!-- 		  <p class='content'>                            															-->
+<!-- 				<a href='#' class="hide">Hide</a>        															-->
+<!-- 		  testowa opcja                                  															-->
+<!-- 			</div>                                                                                                  -->
+<!--  </div>                                                                                                            -->
+</div>
+
+</body>
+
+  <script>
+	// Provide your access token
+	L.mapbox.accessToken = 'pk.eyJ1Ijoia2hhc2hpc2hpbiIsImEiOiI3NzFkMzI5MzQzNmViOWZmZWY3YWYxMTRlM2UzY2E5OCJ9.ZupRNNwBdBVMGHqpW5yy4A';
+	// Create a map in the div #map
+	map = L.mapbox.map('map')
+	.setView([52, 18], 7);
+	L.mapbox.styleLayer('mapbox://styles/mapbox/light-v9').addTo(map);
+	L.control.scale({position: 'topleft',imperial: false}).addTo(map);
+	
+	var bounds = map.getBounds(),
+        topLeft = map.latLngToLayerPoint(bounds.getNorthWest()),
+        bottomRight = map.latLngToLayerPoint(bounds.getSouthEast()),
+        drawLimit = bounds.pad(0.8);
+		
+	var unique_description_paragraph_name = "#description"
+	
+	var warstwa_srodow = L.mapbox.featureLayer()
+	  .loadURL('test.geojson')
+	  .on('ready', function() {
+	   // set style by feature
+	   style_features(warstwa_srodow)
+		});
+	map.addLayer(warstwa_srodow);
+
+	function style_features(layer){
+		layer.eachLayer(function(feature_obj) {
+		feature_obj.id = "warstwa_srodow"; 
+		if (feature_obj.feature.geometry.type =="Point"){
+		var popup = L.popup()
+		.setContent("Środowisko: " + feature_obj.feature.properties.lokalizacja + "<Br> Drużyna: "+ feature_obj.feature.properties.nazwa + "<br> Kontakt: <a href>" + feature_obj.feature.properties.kontakt+"</a>" );
+		feature_obj.bindPopup(popup);
+		feature_obj.setIcon(ikona_srodowiska);
+		feature_obj.on('click', function(d) {
+			change_description(feature_obj);
+			});
+		}
+			});
+	}
+		
+	var ikona_srodowiska = L.icon({
+			iconUrl: 'marker.png',
+			iconSize:     [50, 50]
+		});	
+
+	
+	function change_description(object){
+	d3.select(unique_description_paragraph_name).text(object.feature.properties.lokalizacja);
+	console.log(object.feature.properties.nazwa);
+	}		
+
+	//Add on button listeners to menu elements of about and options
+//	showHide('#about');
+//	showHide('#options');
+
+	//Turn off any selectors
+	d3.select(document.body)
+		.on("unload", d3.selectAll('#selections').select('#selector').property('checked', false));
+		
+	function showHide(selector) {
+	  d3.select(selector).select('.hide').on('click', function(){
+		d3.select(selector)
+		  .classed('visible', false)
+		  .classed('hidden', true);
+	  });
+
+	  d3.select(selector).select('.show').on('click', function(){
+		d3.select(selector)
+		  .classed('visible', true)
+		  .classed('hidden', false);
+	  });
+	}; 
+	
+  </script>
+</html>

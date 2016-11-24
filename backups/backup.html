@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="visualise.css" rel="stylesheet" />
+<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>                                                   
+</head>
+<body>
+  <div id='map'> </div>
+  <div id='loading'> </div>
+  
+  <div id='about'>
+    <a href='#' class="show">About</a>
+    <p class='content'>
+      <a href='#' class="hide">Hide</a>
+	        Created by P.K
+      <a href='https://www.mapbox.com/about/maps/' target='_blank'>Mapbox and OpenStreetMap</a>.
+   </div>
+
+<div id='selections' class="selections">
+<div id="container">
+<nav id="menu"></nav>
+	Testowy checkbox
+	<input type="checkbox" id="selector" style="border:2px dotted #00f;display:block;background:#ff0000;" />
+</div>
+	    <div id='options'>
+      <a href='#' class="show">Options</a>
+	  <p class='content'>
+	        <a href='#' class="hide">Hide</a>
+	  testowa opcja
+  </div>
+  </div>
+ </div>
+
+  
+</body>
+  <script>
+	  // Provide your access token
+	L.mapbox.accessToken = 'pk.eyJ1Ijoia2hhc2hpc2hpbiIsImEiOiI3NzFkMzI5MzQzNmViOWZmZWY3YWYxMTRlM2UzY2E5OCJ9.ZupRNNwBdBVMGHqpW5yy4A';
+	// Create a map in the div #map
+	map = L.mapbox.map('map')
+	.setView([52, 18], 7);
+	L.mapbox.styleLayer('mapbox://styles/mapbox/light-v9').addTo(map);
+	L.control.scale({position: 'topleft',imperial: false}).addTo(map);
+	var bounds = map.getBounds(),
+        topLeft = map.latLngToLayerPoint(bounds.getNorthWest()),
+        bottomRight = map.latLngToLayerPoint(bounds.getSouthEast()),
+        drawLimit = bounds.pad(0.8);
+		
+	var myLayer = L.mapbox.featureLayer()
+	  .loadURL('test.geojson')
+	  .setFilter(filterPoints)
+	  .on('ready', function() {
+		myLayer.eachLayer(function(layer) {
+		  layer.bindPopup("Środowisko: " + layer.feature.properties.lokalizacja + " Drużyna: "+ layer.feature.properties.nazwa + "Kontakt: " + layer.feature.properties.kontakt );
+		});
+	  })
+	  .addTo(map);
+ 
+	function filterPoints(d) {
+		for (var i = 0, len = d.geometry.coordinates.length; i < len; i++) {
+			if (d.geometry.type == "Point") { 
+				var latlng = new L.LatLng(d.geometry.coordinates[1], d.geometry.coordinates[0]); 
+				if (bounds.contains(latlng)) {
+					return true};
+					}
+					
+			if (d.geometry.type == "LineString") {
+					var latlng = new L.LatLng(d.geometry.coordinates[i][1], d.geometry.coordinates[i][0]); 
+					if (bounds.contains(latlng)) {
+						return true};
+					}
+					
+			if (d.geometry.type == "Polygon") {
+				console.log(d)
+				for (var j = 0, len = d.geometry.coordinates[i].length; j < len; j++) {
+						var latlng = new L.LatLng(d.geometry.coordinates[i][j][1], d.geometry.coordinates[i][j][0]); 
+						if (bounds.contains(latlng)) {
+						return true};
+					};
+				}
+				
+			if (d.geometry.type == "MultiPolygon") {
+				for (var j = 0, len = d.geometry.coordinates[i].length; j < len; j++) {
+					for (var k = 0, len = d.geometry.coordinates[i][j].length; k < len; k++) {
+						var latlng = new L.LatLng(d.geometry.coordinates[i][j][k][1], d.geometry.coordinates[i][j][k][0]); 
+						if (bounds.contains(latlng)) {
+							return true};
+						};
+					}
+				}
+		}
+				
+	};		
+	//Add on button listeners to menu elements of about and options
+	showHide('#about');
+	showHide('#options');
+	//Turn off any selectors
+	d3.select(document.body)
+		.on("unload", d3.selectAll('#selections').select('#selector').property('checked', false));
+		
+	function showHide(selector) {
+	  d3.select(selector).select('.hide').on('click', function(){
+		d3.select(selector)
+		  .classed('visible', false)
+		  .classed('hidden', true);
+	  });
+
+	  d3.select(selector).select('.show').on('click', function(){
+		d3.select(selector)
+		  .classed('visible', true)
+		  .classed('hidden', false);
+	  });
+	};  
+  </script>
+</html>
