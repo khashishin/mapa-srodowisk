@@ -27,7 +27,7 @@
 <!-- 	 <nav id="menu"></nav>                                                                                          -->
 <!-- 		Testowy checkbox                                                                                            -->
 <!-- 		<input type="checkbox" id="selector" style="border:2px dotted #00f;display:block;background:#ff0000;" />    -->
-<!-- 	 </div>
+<!-- 	 </div>	
 <!-- 			<div id='options'>                           															-->
 <!-- 		  <a href='#' class="show">Options</a>           															-->
 <!-- 		  <p class='content'>                            															-->
@@ -44,10 +44,12 @@
 	L.mapbox.accessToken = 'pk.eyJ1Ijoia2hhc2hpc2hpbiIsImEiOiI3NzFkMzI5MzQzNmViOWZmZWY3YWYxMTRlM2UzY2E5OCJ9.ZupRNNwBdBVMGHqpW5yy4A';
 	// Create a map in the div #map
 	map = L.mapbox.map('map')
-	.setView([52, 18], 7);
+	.setView([52.4, 17.1], 7);
+	map.setMaxBounds([[54.5,14.8], [50.5,19.8]])
+	map.options.minZoom = 7;
 	L.mapbox.styleLayer('mapbox://styles/mapbox/light-v9').addTo(map);
 	L.control.scale({position: 'topleft',imperial: false}).addTo(map);
-	
+	//map.fitBounds();
 	var bounds = map.getBounds(),
         topLeft = map.latLngToLayerPoint(bounds.getNorthWest()),
         bottomRight = map.latLngToLayerPoint(bounds.getSouthEast()),
