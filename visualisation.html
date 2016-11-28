@@ -58,7 +58,7 @@
 	var unique_description_paragraph_name = "#description"
 	
 	var warstwa_srodow = L.mapbox.featureLayer()
-	  .loadURL('test.geojson')
+	  .loadURL('srodowiska.geojson')
 	  .on('ready', function() {
 	   // set style by feature
 	   style_features(warstwa_srodow)
@@ -70,7 +70,12 @@
 		feature_obj.id = "warstwa_srodow"; 
 		if (feature_obj.feature.geometry.type =="Point"){
 		var popup = L.popup()
-		.setContent("Środowisko: " + feature_obj.feature.properties.lokalizacja + "<Br> Drużyna: "+ feature_obj.feature.properties.nazwa + "<br> Kontakt: <a href>" + feature_obj.feature.properties.kontakt+"</a>" );
+		.setContent("Środowisko: "+feature_obj.feature.properties.nazwa);
+		var ikona_srodowiska = L.icon({
+			iconUrl: "obrazki/"+feature_obj.feature.properties.ikona+".png",
+			iconSize:     [30, 30]
+		});	
+		
 		feature_obj.bindPopup(popup);
 		feature_obj.setIcon(ikona_srodowiska);
 		feature_obj.on('click', function(d) {
@@ -80,15 +85,9 @@
 			});
 	}
 		
-	var ikona_srodowiska = L.icon({
-			iconUrl: 'marker.png',
-			iconSize:     [50, 50]
-		});	
 
-	
 	function change_description(object){
-	d3.select(unique_description_paragraph_name).text(object.feature.properties.lokalizacja);
-	console.log(object.feature.properties.nazwa);
+	d3.select(unique_description_paragraph_name).text(object.feature.properties.nazwa);
 	}		
 
 	//Add on button listeners to menu elements of about and options
