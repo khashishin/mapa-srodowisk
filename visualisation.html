@@ -65,6 +65,12 @@
 		});
 	map.addLayer(warstwa_srodow);
 
+//	var wlkp = L.mapbox.featureLayer()
+//	  .loadURL('Greater_Poland_Voivodeship_AL4.GeoJson')
+//	  .on('ready', function() {});
+//	map.addLayer(wlkp);
+
+	
 	function style_features(layer){
 		layer.eachLayer(function(feature_obj) {
 		feature_obj.id = "warstwa_srodow"; 
