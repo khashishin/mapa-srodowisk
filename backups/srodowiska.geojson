@@ -1,0 +1,590 @@
+﻿{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.918558,
+          52.407941
+        ]
+      },
+      "properties": {
+        "nazwa": "Chorągiew Wlkp. ZHP",
+        "ikona": "j_zielen_A",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.920689,
+          52.990774
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Chodzież",
+        "ikona": "j_zielen_1",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.984203,
+          52.479565
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Czerwonak im. Wojska Polskiego",
+        "ikona": "j_zielen_1",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.603354,
+          52.531245
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Gniezno im. Bolesława Chrobrego",
+        "ikona": "j_zielen_4",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.499874,
+          51.968253
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Jarocin im. Lotnictwa Polskiego",
+        "ikona": "j_zielen_2",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.079975,
+          51.751296
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Kalisz im. ks. hm. Stanisława Piotrowskiego",
+        "ikona": "j_zielen_4",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.986585,
+          51.275918
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Kępno im. Wojska Polskiego",
+        "ikona": "j_zielen_0",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.63323,
+          52.20488
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Koło im. Kazimierza Wielkiego",
+        "ikona": "j_zielen_4",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.281783,
+          52.234464
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Konin im. Szarych Szeregów",
+        "ikona": "c_zielen_3",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.638064,
+          52.082216
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Kościan im. hm. Floriana Marciniaka",
+        "ikona": "j_zielen_3",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.457042,
+          51.82751
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Koźmin Wielkopolski im. Strajku Szkolnego Dzieci Koźmińskich 1906/07",
+        "ikona": "j_zielen_1",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.085038,
+          52.251543
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Kórnik im. Tytusa Hrabiego Działyńskiego",
+        "ikona": "j_zielen_0",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.438838,
+          51.690962
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Krotoszyn im. Powstańców Wielkopolskich",
+        "ikona": "j_zielen_1",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.561408,
+          51.840238
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Leszno im. Żołnierzy Garnizonu Leszczyńskiego",
+        "ikona": "j_zielen_1",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.118026,
+          52.320655
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Nowy Tomyśl im. Emilii Sczanieckiej",
+        "ikona": "j_zielen_1",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.810754,
+          52.647919
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Oborniki Wielkopolskie im. Jana Miękusa",
+        "ikona": "j_zielen_0",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.816297,
+          51.647531
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Ostrów Wielkopolski im. II Armii Wojska Polskiego",
+        "ikona": "c_zielen_3",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.122341,
+          51.508386
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Ziemi Ostrzeszowskiej im. Szarych Szeregów",
+        "ikona": "j_zielen_3",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.737102,
+          53.156141
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Piła im. Stanisława Staszica",
+        "ikona": "j_zielen_0",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.205775,
+          51.738703
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Powiatu Kaliskiego w Opatówku im. Aleksandra Kamińskiego",
+        "ikona": "j_zielen_0",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.875188,
+          52.390858
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Poznań-Grunwald im. Zwycięzców Grunwaldu",
+        "ikona": "j_zielen_1",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.908438,
+          52.429244
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Poznań-Jeżyce im. Stefana Czarnieckiego",
+        "ikona": "j_zielen_1",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.949944,
+          52.393337
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Poznań – Nowe Miasto im. Bolesława Chrobrego",
+        "ikona": "j_zielen_7",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.934297,
+          52.421417
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Poznań – Stare Miasto „Piast” im. Powstańców Wielkopolskich 1918/19",
+        "ikona": "j_zielen_3",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.894503,
+          52.412512
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Poznań-Śródmieście „Siódemka” im. hm. Sylwestra Wietrzykowskiego",
+        "ikona": "j_zielen_8",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.914167,
+          52.389359
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Poznań-Wilda im. Jana Kasprowicza",
+        "ikona": "c_zielen_5",
+        "description": "&nbsp;\r\n\r\n<span style=\"color: #008000;\"><strong>namiestnik w\u0119drowniczy Hufca ZHP Wilda<\/strong><em><strong> - pwd. Sebastian Kubiak<\/strong><\/em><\/span>\r\n\r\n<strong>jednostki w\u0119drownicze Hufca ZHP Wilda:<\/strong>\r\n<ul>\r\n \t<li><em>18 PDHw \u201EPRETORIA\u201D im. gen. Tadeusza Kutrzeby<\/em> - dru\u017Cynowy pwd.\u00A0Sebastian Kubiak<\/li>\r\n \t<li><em>74 Pozna\u0144ska Dru\u017Cyna W\u0119drownicza \"Lewe Skrzyd\u0142o\" im Dywizjonu 303<\/em>\u00A0- dru\u017Cynowy pwd. Jakub Figaj<\/li>\r\n \t<li><em>93 Pozna\u0144ska Dru\u017Cyna W\u0119drownicza\u00A0<\/em>- dru\u017Cynowy\u00A0odkr. Jan Biber<\/li>\r\n \t<li><em>33 Pozna\u0144ska Dru\u017Cyna Harcerska W\u0119drownicza \u201EGoliard\u201D\u00A0<\/em>- dru\u017Cynowy\u00A0pwd. J\u0119drzej Krauze<\/li>\r\n \t<li><em>92 PDH \u201EOrze\u0142\u201D im. 3 Kompanii \u201EAGAT\u201D (patrol w\u0119drowniczy) -\u00A0<\/em>pwd. Jakub S\u0119dziak<\/li>\r\n<\/ul>\r\n&nbsp;\r\n\r\n<!--more-->\r\n\r\n<hr \/>\r\n\r\n<h3><strong><span style=\"color: #008000;\">18 PDHw \u201EPRETORIA\u201D im. gen. Tadeusza Kutrzeby<\/span><\/strong><\/h3>\r\n<p style=\"padding-left: 30px;\"><strong>dru\u017Cynowy\u00A0pwd.\u00A0Sebastian Kubiak<\/strong><\/p>\r\n<p style=\"padding-left: 30px;\"><em>strona internetowa:\u00A0<a href=\"http:\/\/18pdhw.poznan-wilda.pl\/\">http:\/\/18pdhw.poznan-wilda.pl\/<\/a><\/em><\/p>\r\n\r\n<blockquote>\r\n<p style=\"text-align: justify;\">Samodzielna dru\u017Cyna w\u0119drownicza \u017Ce\u0144ska prowadzona przez dru\u017Cynowego m\u0119\u017Cczyzn\u0119.<\/p>\r\n&nbsp;<\/blockquote>\r\n\r\n<hr \/>\r\n\r\n<h3><strong><span style=\"color: #008000;\">74 Pozna\u0144ska Dru\u017Cyna W\u0119drownicza \"Lewe Skrzyd\u0142o\" im Dywizjonu 303<\/span><\/strong><\/h3>\r\n<p style=\"padding-left: 30px;\"><strong>dru\u017Cynowy\u00A0pwd. Jakub Figaj<\/strong><\/p>\r\n<p style=\"padding-left: 30px;\"><em>strona internetowa:\u00A0<a href=\"https:\/\/www.facebook.com\/74pdw\">https:\/\/www.facebook.com\/74pdw<\/a><\/em><\/p>\r\n\r\n<blockquote>\r\n<p style=\"padding-left: 30px; text-align: justify;\">M\u0142oda, aktywna dru\u017Cyna. Co nas wyr\u00F3\u017Cnia? FILMY (tworzymy ro\u017Cne, ciekawe, tematyczne filmy), W\u0118DR\u00D3WKA (na ka\u017Cdy mo\u017Cliwy spos\u00F3b) oraz SILNE WI\u0118ZI.<\/p>\r\n<p style=\"padding-left: 30px;\"><\/p>\r\n<\/blockquote>\r\n\r\n<hr \/>\r\n\r\n<h3><strong><span style=\"color: #008000;\">93 Pozna\u0144ska Dru\u017Cyna W\u0119drownicza<\/span><\/strong><\/h3>\r\n<p style=\"padding-left: 30px;\"><strong>dru\u017Cynowy\u00A0odkr. Jan Biber<\/strong><\/p>\r\n<p style=\"padding-left: 30px;\"><em>strona internetowa: ...<\/em><\/p>\r\n\r\n<blockquote>...\r\n<p style=\"padding-left: 30px;\"><\/p>\r\n<\/blockquote>\r\n\r\n<hr \/>\r\n\r\n<h3><strong><span style=\"color: #008000;\">33 Pozna\u0144ska Dru\u017Cyna Harcerska W\u0119drownicza \u201EGoliard\u201D\u00A0<\/span><\/strong><\/h3>\r\n<p style=\"padding-left: 30px;\"><strong>dru\u017Cynowy\u00A0pwd. J\u0119drzej Krauze<\/strong><\/p>\r\n<p style=\"padding-left: 30px;\"><em>strona internetowa: ...<\/em><\/p>\r\n\r\n<blockquote>...\r\n\r\n&nbsp;<\/blockquote>\r\n\r\n<hr \/>\r\n\r\n<h3><strong><span style=\"color: #008000;\">92 PDH \u201EOrze\u0142\u201D im. 3 Kompanii \u201EAGAT\u201D (patrol w\u0119drowniczy)<\/span><\/strong><\/h3>\r\n<p style=\"padding-left: 30px;\"><strong>pwd. Jakub S\u0119dziak<\/strong><\/p>\r\n<p style=\"padding-left: 30px;\"><em>strona internetowa:\u00A0<a href=\"www: 92pdh.poznan-wilda.pl\">www: 92pdh.poznan-wilda.pl<\/a>;\u00A0<a href=\"https:\/\/www.facebook.com\/92PDHPrzezyjToSam\/\">https:\/\/www.facebook.com\/92PDHPrzezyjToSam\/<\/a><\/em><\/p>\r\n\r\n<blockquote>\r\n<p style=\"padding-left: 30px; text-align: justify;\">Nasza dru\u017Cyna dzia\u0142a nieprzerwanie od 2002r. przy ZSO 4 na os. Czecha. Liczymy obecnie ok 60 os\u00F3b podzielnych na 3 piony (m\u0142odszy, HS, w\u0119drowniczy), mamy obecnie 8 w\u0119drownik\u00F3w. Jeste\u015Bmy dru\u017Cyn\u0105 w kt\u00F3rej ka\u017Cdy znajdzie co\u015B dla siebie, czynnie uczestniczymy w imprezach sportowych, para-militarnych czy survivalowych jeste\u015Bmy bardzo otwarci na wszelkiej ma\u015Bci doznania. Nie organizujemy cyklicznie \u017Cadnej imprezy - jeste\u015Bmy dru\u017Cyn\u0105 zadaniowc\u00F3w, ludzi od brudnej roboty - my nie pytamy jak, pytamy na kiedy. \u015Arednio co dwa tygodnie uczestniczymy w jakim\u015B wydarzeniu harcerskim, jednak r\u00F3wnie mocno staramy si\u0119 bra\u0107 udzia\u0142 w innych eventach organizowanych poza ZHP. Co roku wyje\u017Cd\u017Cam na 3 tygodniowy ob\u00F3z sta\u0142y oraz Nasz pion w\u0119drowniczy, uczestniczy z przerwami od kilku lat w \"W\u0119drowniczej Watrze\".<\/p>\r\n<p style=\"padding-left: 30px;\">\u00A0<a href=\"http:\/\/www.referat.zhp.wlkp.pl\/wp-content\/uploads\/2016\/09\/92PDH_Orze\u0142.jpg\"><img class=\"wp-image-302 aligncenter\" src=\"http:\/\/www.referat.zhp.wlkp.pl\/wp-content\/uploads\/2016\/09\/92PDH_Orze\u0142-300x177.jpg\" alt=\"92pdh_orzel\" width=\"800\" height=\"472\" \/><\/a><\/p>\r\n<\/blockquote>"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.903442,
+          52.394055
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Poznań-Rejon im. Szarych Szeregów",
+        "ikona": "j_zielen_6",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.858875,
+          51.615748
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Rawicz im. Saperów Wojska Polskiego",
+        "ikona": "j_zielen_0",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.585171,
+          52.604527
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Szamotuły im. Armii „Poznań”",
+        "ikona": "j_zielen_0",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.530492,
+          52.013583
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Śmigiel im. dr. Franciszka Witaszka",
+        "ikona": "j_zielen_0",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.023713,
+          52.096121
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Śrem im. „Mazurka Dąbrowskiego”",
+        "ikona": "j_zielen_2",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.281037,
+          52.223772
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Środa Wielkopolska im. gen. Jana Henryka Dąbrowskiego",
+        "ikona": "j_zielen_2",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.458274,
+          53.037922
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Trzcianka im. ppor. Emilii Gierczak",
+        "ikona": "j_zielen_1",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.816879,
+          52.558917
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Trzemeszno",
+        "ikona": "j_zielen_1",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.496487,
+          52.018075
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Turek im. Mikołaja Kopernika",
+        "ikona": "j_zielen_0",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.192848,
+          52.807031
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Wągrowiec im. hm. Franciszka Grajkowskiego",
+        "ikona": "j_zielen_3",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.562918,
+          52.331426
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Września „WRZOS” im. Dzieci Wrzesińskich",
+        "ikona": "c_zielen_3",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.306498,
+          51.80735
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Wschowa im. Janusza Meissnera",
+        "ikona": "j_zielen_3",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.047813,
+          53.359886
+        ]
+      },
+      "properties": {
+        "nazwa": "Hufiec ZHP Złotów im. Bojowników o Wolność i Polskość Ziemi Złotowskiej",
+        "ikona": "j_zielen_2",
+        "description": ""
+      }
+    }
+  ]
+}
