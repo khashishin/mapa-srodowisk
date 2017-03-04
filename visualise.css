@@ -17,16 +17,22 @@ html, body, #map-container {
   height: 100%;
 }
 
+.leaflet-right {
+    right: 20;
+}
+
 #map {
-  top:50px;
-  width:60%;
-  height: 60%;
+  top:0;
+  width:100%;
+  height: 90%;
 }
 
 #description{
   position:relative;
-  margin-top:5%;
-  margin-left: 10%;
+  margin-top:2%;
+  text-align:center;
+  font-size:19px;
+  font-family: Arial;
   background-color: #FFF;
 }
 
