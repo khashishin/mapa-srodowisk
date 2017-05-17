@@ -24,7 +24,7 @@ html, body, #map-container {
 #map {
 	position: relative;	
 	width:50%;
-	height: 40%;
+	height: 25%;
 }
 
 #desc {
