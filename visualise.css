@@ -21,6 +21,8 @@ html, body, #map-container {
     right: 20;
 }
 
+#legend {width: 90%;}
+
 #map {
 	position: relative;	
 	width:50%;
