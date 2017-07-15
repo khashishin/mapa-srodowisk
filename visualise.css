@@ -21,8 +21,6 @@ html, body, #map-container {
     right: 20;
 }
 
-#legend {width: 90%;}
-
 #map {
 	position: relative;	
 	width:50%;
@@ -36,6 +34,8 @@ html, body, #map-container {
   margin-right: 5px;
   font-size: 19px;
 }
+
+#legend {width: 40%;}
 
 #Srodowisko{
   clear: left;
